@@ -85,7 +85,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tip Calculator" id="Nq0-Ll-bM4"/>
                     <connections>
+                        <outlet property="billField" destination="ELE-kW-2Ek" id="WxF-oC-51M"/>
                         <outlet property="tipLabel" destination="NR6-zJ-Aph" id="92W-sm-YhX"/>
+                        <outlet property="totalLabel" destination="0YU-oO-bUw" id="ZWF-M3-TCz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
