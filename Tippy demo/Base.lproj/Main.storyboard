@@ -75,6 +75,9 @@
                                     <segment title="20%"/>
                                     <segment title="25%"/>
                                 </segments>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="VqM-nj-tOG"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -86,6 +89,7 @@
                     <navigationItem key="navigationItem" title="Tip Calculator" id="Nq0-Ll-bM4"/>
                     <connections>
                         <outlet property="billField" destination="ELE-kW-2Ek" id="WxF-oC-51M"/>
+                        <outlet property="tipControl" destination="VFa-Oj-Z1i" id="85M-ml-tjZ"/>
                         <outlet property="tipLabel" destination="NR6-zJ-Aph" id="92W-sm-YhX"/>
                         <outlet property="totalLabel" destination="0YU-oO-bUw" id="ZWF-M3-TCz"/>
                     </connections>
