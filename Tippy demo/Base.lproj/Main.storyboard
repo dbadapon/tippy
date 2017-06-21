@@ -80,13 +80,19 @@
                                 </connections>
                             </segmentedControl>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.79572803769965861" green="0.90545713670592387" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <gestureRecognizers/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="gie-nc-NLP" appends="YES" id="nxa-bh-9jd"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" title="Tip Calculator" id="Nq0-Ll-bM4"/>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="Nq0-Ll-bM4">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="VZe-s7-DGg">
+                            <connections>
+                                <segue destination="EJt-d6-FuA" kind="push" id="dPb-Aq-EWa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="billField" destination="ELE-kW-2Ek" id="WxF-oC-51M"/>
                         <outlet property="tipControl" destination="VFa-Oj-Z1i" id="85M-ml-tjZ"/>
@@ -102,6 +108,45 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="537.5" y="154.5"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="0tj-o6-tlL">
+            <objects>
+                <viewController id="EJt-d6-FuA" customClass="SettingsViewController" customModule="Tippy_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mJO-fh-BnD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="WOT-gu-lnd">
+                                <rect key="frame" x="16" y="319" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="setDefault:" destination="EJt-d6-FuA" eventType="valueChanged" id="SyZ-DT-fyL"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Default Tip Percentage" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3B9-vh-Mwe">
+                                <rect key="frame" x="99" y="240" width="176" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.7957280377" green="0.90545713670000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5QJ-Hs-rW0"/>
+                    <connections>
+                        <outlet property="defaultControl" destination="WOT-gu-lnd" id="J6N-Gw-8f3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4g-EB-2fr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="958.5" y="154.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="duE-TN-Qw6">

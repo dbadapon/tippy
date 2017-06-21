@@ -16,6 +16,29 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     
     
+    override func viewWillAppear(_ animated: Bool){
+        super.viewWillAppear(animated)
+        
+        let defaults = UserDefaults.standard
+        tipControl.selectedSegmentIndex = defaults.integer(forKey: "defaultIndex")
+        self.calculateTip((Any).self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+    
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

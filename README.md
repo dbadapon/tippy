@@ -13,7 +13,7 @@ The following **required** functionality is complete:
 * [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage.
+* [x] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -35,9 +35,12 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
-Had some problems bringing up the keyboard in the simulator, but changing one of the keyboard settings fixed it.
+Had some problems bringing up the keyboard in the simulator, but changing one of the keyboard settings (under Hardware) fixed it.
 Originally followed the video and set the simulator to iPhone 5s, but realized that sizing was a problem and set
-    it back to iPhone 7 (since that's what we're using anyway')
+    it back to iPhone 7 (since that's what we're using anyway)
+I was stumped as to how to implement the Settings screen; I wasn't sure where to set the defaults but I figured it out with 
+    the help of my pod.
+
 
 ## Credits
 
